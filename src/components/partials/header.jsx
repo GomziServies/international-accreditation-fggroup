@@ -37,10 +37,8 @@ const Header = () => {
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
 
         <Link to="/" className="logo d-flex align-items-center me-auto underline-none">
-          <img src="/assets/img/iptna-logo.png" alt="Logo" className="logo-img" />
-          <div className="section-title about section m-0 p-0"><h2 className='m-0 ms-2' style={{ color: '#246696ff' }}>IPTNA</h2></div>
+          <img src="/assets/img/inpta-logo.webp" alt="Logo" className="logo-img" />
         </Link>
-
 
         <nav
           id="navmenu"
@@ -48,8 +46,9 @@ const Header = () => {
           ref={navRef}
         >
           <ul className='fw-bold'>
-            <li><a href="#hero" onClick={() => { closeMobileNav(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</a></li>
+            <li><Link to="/" onClick={() => { closeMobileNav(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</Link></li>
             <li><a href="#about" onClick={closeMobileNav}>About</a></li>
+            <li><a href="#services" onClick={closeMobileNav}>Services</a></li>
             <li><a href="#contact" onClick={closeMobileNav}>Contact us</a></li>
           </ul>
 
@@ -59,19 +58,9 @@ const Header = () => {
           ></i>
         </nav>
 
-        <a href="#getstart" className="btn-getstarted underline-none" onClick={(e) => {
-          e.preventDefault();
-          const offset = 100; // same offset
-          const element = document.getElementById("getstart");
-          if (element) {
-            const top = element.getBoundingClientRect().top + window.pageYOffset - offset;
-            window.scrollTo({ top, behavior: "smooth" });
-          }
-          closeMobileNav();
-        }}>
+        <Link className="btn-getstarted underline-none" to="/#about" onClick={closeMobileNav}>
           Get Started
-        </a>
-
+        </Link>
       </div>
     </header>
   );

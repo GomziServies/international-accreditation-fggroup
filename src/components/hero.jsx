@@ -9,31 +9,31 @@ const Hero = () => {
         {
             title: "International Points Profile System Benchmarking",
             description:
-                "As one of the leading international accrediting agencies, IPTNA's accreditation council reviews and evaluates institutions using its unique points profile system to ensure they meet established accreditation standards of academic quality and integrity.",
+                "As one of the leading international accrediting agencies, IAO's accreditation council reviews and evaluates institutions using its unique points profile system to ensure they meet established accreditation standards of academic quality and integrity.",
             image: "/assets/img/banner-img/new1.jpg"
         },
         {
             title: "Regions Eligible for 97.5% WAM & Youth Visions Grants",
             description:
-                "The International Accreditation Organization (IPTNA) provides international accreditation services and accreditation grants to educational institutions that meet the highest standards of quality and excellence.",
+                "The International Accreditation Organization (IAO) provides international accreditation services and accreditation grants to educational institutions that meet the highest standards of quality and excellence.",
             image: "/assets/img/banner-img/new4.jpg"
         },
         {
-            title: "IPTNA's Accreditation Defines Success",
+            title: "IAO's Accreditation Defines Success",
             description:
-                "IPTNA's International Accreditation Commission reviews and evaluates institutions and rewards them with global recognition by providing IPTNA's certification and accreditation.",
+                "IAO's International Accreditation Commission reviews and evaluates institutions and rewards them with global recognition by providing IAO's certification and accreditation.",
             image: "/assets/img/banner-img/new5.jpg"
         },
         {
-            title: "IPTNA Enjoys Impressive Reviews In The Media",
+            title: "IAO Enjoys Impressive Reviews In The Media",
             description:
-                "IPTNA's accreditation services have received impressive reviews in the media, with many reputable outlets recognizing the organization for its commitment to improving education standards globally.",
+                "IAO's accreditation services have received impressive reviews in the media, with many reputable outlets recognizing the organization for its commitment to improving education standards globally.",
             image: "/assets/img/banner-img/new3.jpg"
         },
         {
             title: "Over 1500 Educational Consultants",
             description:
-                "IPTNA Accreditation is a mark of quality and excellence in education. By obtaining IPTNA certification, institutions can demonstrate their commitment to excellence through academic accreditation.",
+                "IAO Accreditation is a mark of quality and excellence in education. By obtaining IAO certification, institutions can demonstrate their commitment to excellence through academic accreditation.",
             image: "/assets/img/banner-img/new2.jpg"
         },
     ];
