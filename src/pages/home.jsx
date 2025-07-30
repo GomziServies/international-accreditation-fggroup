@@ -92,7 +92,7 @@ const Home = () => {
 
             <div
                 id="getstart"
-                ref={ getStartRef }
+                ref={getStartRef}
                 className="signup-section bg-dotted"
                 data-aos="fade-up"
                 data-aos-delay="200"
@@ -109,8 +109,8 @@ const Home = () => {
                             <input
                                 type="text"
                                 name="name"
-                                value={ formData.name }
-                                onChange={ handleChange }
+                                value={formData.name}
+                                onChange={handleChange}
                                 className="form-control form-control-lg"
                                 placeholder="Full Name"
                             />
@@ -120,45 +120,51 @@ const Home = () => {
                             <input
                                 type="email"
                                 name="email"
-                                value={ formData.email }
-                                onChange={ handleChange }
+                                value={formData.email}
+                                onChange={handleChange}
                                 className="form-control form-control-lg"
                                 placeholder="Email"
                             />
                         </div>
 
                         <div className="col-12 col-md-3">
-                            <div className="d-flex align-items-center">
+                            <div className="d-flex merged-phone-input">
                                 <Select
-                                    options={ countries }
-                                    value={ formData.countryCode }
-                                    onChange={ (selectedOption) =>
+                                    options={countries}
+                                    value={formData.countryCode}
+                                    onChange={(selectedOption) =>
                                         setFormData({ ...formData, countryCode: selectedOption })
                                     }
                                     placeholder="+00"
-                                    className="flex-grow-1"
                                     classNamePrefix="react-select"
-                                    menuPortalTarget={ document.body }
-                                    formatOptionLabel={ ({ code }) => (
+                                    menuPortalTarget={document.body}
+                                    formatOptionLabel={({ code }) => (
                                         <div className="d-flex align-items-center gap-2">
-                                            <span>{ code }</span>
+                                            <span>{code}</span>
                                         </div>
-                                    ) }
-                                    styles={ {
-                                        container: (provided) => ({
-                                            ...provided,
-                                            minWidth: '90px',
+                                    )}
+                                    styles={{
+                                        control: (base) => ({
+                                            ...base,
+                                            height: '48px',
+                                            borderTopRightRadius: 0,
+                                            borderBottomRightRadius: 0,
+                                        }),
+                                        container: (base) => ({
+                                            ...base,
+                                            width: '100px',
+                                            zIndex: 9999,
                                         }),
                                         menuPortal: base => ({ ...base, zIndex: 9999 }),
-                                    } }
+                                    }}
                                 />
 
                                 <input
                                     type="tel"
                                     name="phone"
-                                    value={ formData.phone }
-                                    onChange={ handleChange }
-                                    className="form-control form-control-lg phone-number-input"
+                                    value={formData.phone}
+                                    onChange={handleChange}
+                                    className="form-control form-control-lg merged-phone-input"
                                     placeholder="Phone Number"
                                 />
                             </div>
@@ -169,8 +175,8 @@ const Home = () => {
                             <input
                                 type="text"
                                 name="institute"
-                                value={ formData.institute }
-                                onChange={ handleChange }
+                                value={formData.institute}
+                                onChange={handleChange}
                                 className="form-control form-control-lg"
                                 placeholder="Institute Name"
                             />
@@ -178,23 +184,22 @@ const Home = () => {
 
                         <div className="col-12 col-md-2 position-relative z-3">
                             <Select
-                                options={ countries }
-                                value={ formData.country }
-                                onChange={ (option) => setFormData({ ...formData, country: option }) }
+                                options={countries}
+                                value={formData.country}
+                                onChange={(option) => setFormData({ ...formData, country: option })}
                                 placeholder="Select Country"
                                 classNamePrefix="react-select"
                                 className="custom-select"
-                                menuPortalTarget={ document.body }
-                                formatOptionLabel={ ({ value, label }) => (
+                                menuPortalTarget={document.body}
+                                formatOptionLabel={({ value, label }) => (
                                     <div className="d-flex align-items-center gap-3">
                                         <img
-                                            src={ `https://flagcdn.com/w40/${value.toLowerCase()}.png` }
-                                            alt={ label }
-                                            style={ { width: '20px' } }
+                                            src={`https://flagcdn.com/w40/${value.toLowerCase()}.png`}
+                                            alt={label}
                                         />
-                                        <h6 className="m-0">{ label }</h6>
+                                        <h6 className="m-0">{label}</h6>
                                     </div>
-                                ) }
+                                )}
                             />
                         </div>
 
@@ -202,7 +207,7 @@ const Home = () => {
                             <button
                                 type="button"
                                 className="btn btn-warning btn-lg"
-                                onClick={ handleSubmit }
+                                onClick={handleSubmit}
                             >
                                 Submit
                             </button>

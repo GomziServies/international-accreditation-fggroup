@@ -9,7 +9,7 @@ const Footer = () => (
 
                 <div className="col-lg-5 col-md-12 col-sm-12 footer-about">
                     <Link to="/" className="logo d-flex align-items-center underline-none">
-                        {/* <span className="sitename ">OnePage</span> */ }
+                        {/* <span className="sitename ">OnePage</span> */}
                         <img src="/assets/img/iptna-logo.png" alt="Logo" className="logo-img" />
                     </Link>
                     <p>
@@ -30,7 +30,6 @@ const Footer = () => (
                     <ul>
                         <li><a href="#home" className='underline-none'>Home</a></li>
                         <li><a href="#about" className='underline-none'>About us</a></li>
-                        <li><a href="#service" className='underline-none'>Services</a></li>
                         <li><a href="#contact" className='underline-none'>Contact us</a></li>
                     </ul>
                 </div>
@@ -44,11 +43,6 @@ const Footer = () => (
 
             </div>
         </div>
-
-        <div className="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong className="px-1 sitename">IPTNA</strong> <span>All Rights Reserved</span></p>
-        </div>
-
     </footer>
 );
 
