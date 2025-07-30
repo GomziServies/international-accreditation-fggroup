@@ -10,7 +10,7 @@ const Footer = () => (
                 <div className="col-lg-5 col-md-12 col-sm-12 footer-about">
                     <Link to="/" className="logo d-flex align-items-center underline-none">
                         {/* <span className="sitename ">OnePage</span> */}
-                        <img src="/assets/img/inpta-logo.webp" alt="Logo" className="logo-img" />
+                        <img src="/assets/img/iptna-logo.png" alt="Logo" className="logo-img" />
                     </Link>
                     <p>
                         We are dedicated to empowering professionals through resources, support, and community engagement. Join us in fostering growth, learning, and excellence in every step of your journey.
@@ -37,7 +37,7 @@ const Footer = () => (
 
                 <div className="col-12 col-lg-3 col-md-12 col-sm-12 footer-contact text-md-start">
                     <h4>Contact Us</h4>
-                    <p>2, Gomzi, Near Sumul dairy road, Katargam, Surat-395004</p>
+                    <p>2, Gomzi, Abhushan Bungalows, Near Sumul dairy road, Katargam, Surat-395004</p>
                     <p className="mt-4"><strong>Phone:</strong> <span>+91 63540 51487</span></p>
                     <p><strong>Email:</strong> <span>fitnesswithgomzi@gmail.com</span></p>
                 </div>
@@ -46,7 +46,7 @@ const Footer = () => (
         </div>
 
         <div className="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong className="px-1 sitename">INPTA</strong> <span>All Rights Reserved</span></p>
+            <p>© <span>Copyright</span> <strong className="px-1 sitename">IPTNA</strong> <span>All Rights Reserved</span></p>
         </div>
 
     </footer>
