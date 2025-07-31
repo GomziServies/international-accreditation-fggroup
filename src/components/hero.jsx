@@ -2,7 +2,6 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 import Slider from 'react-slick';
 
-
 const Hero = () => {
 
     const banner = [
@@ -25,7 +24,7 @@ const Hero = () => {
             description:
                 "IPTNA's accreditation services have received impressive reviews in the media, with many reputable outlets recognizing the organization for its commitment to improving education standards globally.",
             image: "/assets/img/banner-img/new3.jpg",
-            mobile_image: "/assets/img/banner-img/banner-mobile-01.jpg"
+            mobile_image: "/assets/img/banner-img/banner-mobile-03.jpg"
         },
     ];
 
@@ -47,17 +46,17 @@ const Hero = () => {
                             <Image
                                 src={slide.image}
                                 alt={slide.title}
-                                className="w-100 h-100 hero-image"
-                            // className="w-100  h-100 d-none d-md-block hero-image"
+                                // className="w-100 h-100 hero-image"
+                                className="w-100  h-100 d-none d-md-block hero-image"
                             />
                             {/* Mobile Image */}
-                            {/* <Image
+                            <Image
                                 src={slide.mobile_image}
                                 alt={slide.title}
                                 className="w-100 h-100 d-block d-md-none hero-image"
                                 width={768}
                                 height={500}
-                            /> */}
+                            />
 
                             <div className="mobile-overlay d-md-none"></div>
 
@@ -73,7 +72,6 @@ const Hero = () => {
 
             </div>
         </section>
-
     )
 };
 
