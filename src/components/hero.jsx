@@ -38,20 +38,6 @@ const Hero = () => {
         autoplay: true,
         arrows: false,
     };
-    const options1 = {
-        loop: true,
-        dots: false,
-        dotsEach: false,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        responsive: {
-            0: { items: 1 },
-            600: { items: 1 },
-            1000: { items: 1 },
-        },
-    };
-
     return (
         <section id="hero" className="d-flex align-items-center justify-content-center p-0" data-aos="fade-up" data-aos-delay="150">
             <div className="container-fluid p-0 m-0">
