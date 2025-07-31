@@ -11,9 +11,21 @@ import Home from './pages/home';
 import Footer from './components/partials/footer';
 import { useSiteScripts } from './assets/js/main';
 import { Toaster } from 'react-hot-toast';
+import Aos from 'aos';
+import { useEffect } from 'react';
 
 function App() {
   useSiteScripts();
+
+  useEffect(() => {
+    Aos.init({
+      duration: 800,
+      offset: 200,
+      once: true,
+      easing: "ease-in-out",
+      anchorPlacement: "top-bottom"
+    });
+  }, []);
 
   return (
     <>

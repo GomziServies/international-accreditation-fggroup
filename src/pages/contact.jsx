@@ -27,12 +27,12 @@ const Contact = () => {
                 style={{ border: 0, width: '100%', height: '270px' }}
                 allowFullScreen
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
                 title="Google Map"
               ></iframe>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 pt-2">
             <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i className="bi bi-geo-alt flex-shrink-0"></i>
               <div>

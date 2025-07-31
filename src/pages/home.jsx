@@ -100,7 +100,7 @@ const Home = () => {
                 <div className="signup-card shadow p-2 p-md-5">
                     <div className="text-center">
                         <h4 className="fw-semibold mb-4 text-white text-center">
-                            Sign up now to avail <span className="highlight">90% Accreditation Grants</span> for Educational Institutions, Businesses & Professionals
+                            Sign up now to avail <span className="highlight">Accreditation Grants</span> for Educational Institutions, Businesses & Professionals.
                         </h4>
                     </div>
 

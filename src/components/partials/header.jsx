@@ -36,29 +36,28 @@ const Header = () => {
     <header id="header" className="header d-flex align-items-center sticky-top">
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
 
-        <Link to="/" className="logo d-flex align-items-center me-auto underline-none">
+        <a href="#hero" className="logo d-flex align-items-center me-auto underline-none">
           <img src="/assets/img/iptna-logo.png" alt="Logo" className="logo-img" />
-        </Link>
-
+        </a>
 
         <nav
           id="navmenu"
-          className={ `navmenu ${mobileNavOpen ? 'mobile-nav-active' : ''}` }
-          ref={ navRef }
+          className={`navmenu ${mobileNavOpen ? 'mobile-nav-active' : ''}`}
+          ref={navRef}
         >
           <ul className='fw-bold'>
-            <li><a href="#hero" onClick={ () => { closeMobileNav(); window.scrollTo({ top: 0, behavior: 'smooth' }); } }>Home</a></li>
-            <li><a href="#about" onClick={ closeMobileNav }>About</a></li>
-            <li><a href="#contact" onClick={ closeMobileNav }>Contact us</a></li>
+            <li><a href="#hero" onClick={() => { closeMobileNav(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</a></li>
+            <li><a href="#about" onClick={closeMobileNav}>About</a></li>
+            <li><a href="#contact" onClick={closeMobileNav}>Contact us</a></li>
           </ul>
 
           <i
-            className={ `mobile-nav-toggle d-xl-none bi ${mobileNavOpen ? 'bi-x' : 'bi-list'}` }
-            onClick={ toggleMobileNav }
+            className={`mobile-nav-toggle d-xl-none bi ${mobileNavOpen ? 'bi-x' : 'bi-list'}`}
+            onClick={toggleMobileNav}
           ></i>
         </nav>
 
-        <a href="#getstart" className="btn-getstarted underline-none" onClick={ (e) => {
+        <a href="#getstart" className="btn-getstarted underline-none" onClick={(e) => {
           e.preventDefault();
           const offset = 100; // same offset
           const element = document.getElementById("getstart");
@@ -67,7 +66,7 @@ const Header = () => {
             window.scrollTo({ top, behavior: "smooth" });
           }
           closeMobileNav();
-        } }>
+        }}>
           Get Started
         </a>
 
